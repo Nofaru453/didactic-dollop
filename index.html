@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(rgb(236, 245, 250));
+            }
+            #Kepala{
+                color: rgb(32, 32, 32);
+                position:absolute;
+                top:10px;
+                left:50%;
+                transform: translate(-50%, -50%);
+                background-color: rgb(106, 119, 128);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+                display: flex;
+                text-align: center;
+                box-shadow: black 5px 5px ;
+            }
+            #Profile{
+                position:absolute;
+                top: 150px;
+                left:50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                border-radius: 15px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 0;
+                padding-bottom: 0;
+                height: 45px;
+                width: 800px;
+                background-color: rgb(106, 119, 128);
+                box-shadow: black 1px 1px ;
+                transition: 0.4s ease;
+            }
+            #Profile:hover{
+                position:absolute;
+                top: 155px;
+                left:50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                border-radius: 15px;
+                padding-bottom: ;
+                background-color: rgb(138, 155, 166);
+                box-shadow: black 1px 1px ;
+                height: 60px;
+                width: 800px;
+
+            }
+            #Profile:focus{
+                color: transparent;
+                position:absolute;
+                top: 310px;
+                left:50%;
+                transform: translate(-50%, -50%);
+                font-size: 0px;
+                border-radius: 15px;
+                background-color: rgb(159, 179, 191);
+                padding-top: 0;
+                height: 400px;
+                width: 800px;
+            }
+            #Profile #Isiprofile {
+                position:absolute;
+                top: 0;
+                left:21%;
+                transform: translate(-50%, -50%);
+                font-size: 0px;
+                border-radius: 15px;
+                
+                height:0;
+            }
+            #Profile:hover #Isiprofile {
+                position:absolute;
+                top: 0;
+                left:21%;
+
+            }
+            #Profile:focus #Isiprofile{
+                color: black;
+                position:absolute;
+                top: 2%;
+                left:21%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                border-radius: 15px;
+                text-align: left;
+                transition: 0.2s step-end;
+            }
+            #Profile #Isiprofile ~ #paragraph1{
+                position:absolute;
+                top: 0;
+                left:21%;
+                transform: translate(-50%, -50%);
+                font-size: 0px;
+                border-radius: 15px;
+                
+                height:0;
+            }
+            #Profile:hover #Isiprofile ~ #paragraph1{
+                position:absolute;
+                top: 0;
+                left:21%;
+            }
+            #Profile:focus #Isiprofile ~ #paragraph1 {
+                color: black;
+                position:absolute;
+                top: 20%;
+                left:35%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+                border-radius: 15px;
+                text-align: left;
+                transition: 0.2s step-end;
+            }
+            #Profile:hover #square {
+                position:absolute;
+                top: 77%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                border-radius: 20px;
+                background-color: rgb(78, 78, 78);
+                width: 50px;
+                border-color: black;
+                border: 2px;
+                height: 7px;
+                transition: 0.3 ease;
+            }
+            #Profile:focus #square {
+                position:absolute;
+                top: 77%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                border-radius: 20px;
+                background-color: transparent;
+                width: 50px;
+                border-color: black;
+                border: 2px;
+                height: 7px;
+                transition: 0.3 ease;
+            }
+            #Logo{
+                border-color: aqua;
+                border: 10px;
+                border-radius: 20px;
+                width: 0;
+                height: 0;
+                top: 90px;
+                left: 80%;
+                position:absolute;
+                transition:0.2s ease;
+            }
+            #Profile:focus #Logo{
+                border-color: aqua;
+                border: 10px;
+                border-radius: 20px;
+                width: 250px;
+                height: 250px;
+                top: 90px;
+                left: 67%;
+                position:absolute;
+                transition: 0.5s ease;
+            }
+            
+
+        </style>
+        <p id="Kepala"> Naufal Beginner Web</p>
+    </head>
+    <body>
+        <div>
+        <button id="Profile">Profile
+            <br><br>
+            <div id="square"></div>
+            <br><br>
+            <p id="Isiprofile">My Name is Naufal
+                <p id="paragraph1">
+                    I'am a Student of Software Engineering in ITTelkom Surabaya. hope someday I can mastering Programming language like Javascript, Java, and Python, and also English.. Lol :v.
+                    I love some things like Zelda games and Ultraman series.... 
+                </p>
+            </p>
+            <img id="Logo"src="https://th.bing.com/th/id/OIP.uH43wAPu2HCBW7RTvJzbWwHaHY?pid=ImgDet&rs=1">
+        </button>
+
+        </div>
+    </body>
+</html>
